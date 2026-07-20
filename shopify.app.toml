@@ -1,5 +1,6 @@
 # This file stores configurations for your Shopify app.
 client_id = ""
+application_url="https://xcx40t1g-3000.asse.devtunnels.ms/api/webhooks/v1/shopify-app"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
@@ -10,7 +11,7 @@ api_version = "2025-10"
 
   # Handled by: /app/routes/webhooks.app.uninstalled.tsx
   [[webhooks.subscriptions]]
-  uri = "/webhooks/app/uninstalled"
+  uri = "/uninstalled"
   topics = ["app/uninstalled"]
 
   # Handled by: /app/routes/webhooks.app.scopes_update.tsx
